@@ -26,8 +26,6 @@ const generatePDF = tickets => {
         ["2", "Nachhilfestunde Mathe", "2.18.2021", "25.0 EUR", "2.0", "150.0 EUR"]
     ];
 
-    for (var i=0; i<tableColumn; i++)
-
     // startY is basically margin-top
     doc.autoTable({theme: "grid"})
     doc.autoTable(tableColumn, tableRows, { startY: 60, theme: 'grid'});
