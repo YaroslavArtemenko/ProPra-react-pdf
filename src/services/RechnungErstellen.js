@@ -7,7 +7,7 @@ import moment from "moment";
 
 
 // define a generatePDF function that accepts a tickets argument
-const generatePDF = tickets => {
+const generateRechnung = tickets => {
 
     const rechnungsNummer = "202106KLRO"
     const empfaenger = "Klaus Rotthoff"
@@ -57,4 +57,4 @@ const generatePDF = tickets => {
     doc.save(`${rechnungsNummer}_Rechnung.pdf`);
 };
 
-export default generatePDF;
+export default generateRechnung;
