@@ -18,7 +18,7 @@ const generateHonorar = tickets => {
     const doc = new jsPDF();
 
     // define the columns we want and their titles
-    const tableColumn = ["Pos", "Anzahl h", "Honorar pro h", "Verguetung"];
+    const tableColumn = ["Pos", "Anzahl h", "Honorar pro h", "Vergütung"];
     // define an empty array of rows
     const tableRows = [
         ["1", "43.5", "54.6 EUR", "43.5 EUR"],
@@ -40,7 +40,7 @@ const generateHonorar = tickets => {
     doc.addImage(imgData, 'PNG', 165, 6, 30, 15)
 
     doc.setFontSize(14)
-    doc.text(`Fuer den Monat: ${NewDate}`, 14, 40)
+    doc.text(`Für den Monat: ${NewDate}`, 14, 40)
     doc.line(30, 50, 180, 50)
     doc.line(30, finalY+5, 180, finalY+5)
     doc.setFontSize(12)

@@ -19,7 +19,7 @@ const generateRechnung = tickets => {
     const doc = new jsPDF();
 
     // define the columns we want and their titles
-    const tableColumn = ["Id", "Leistung", "Datum", "Einzehlpreis", "Anzahl h", "Gesamtpreis"];
+    const tableColumn = ["Id", "Leistung", "Datum", "Einzelpreis", "Anzahl h", "Gesamtpreis"];
     // define an empty array of rows
     const tableRows = [
         ["1", "Nachhilfestunde Mathe", "6.7.2021", "35.0 EUR", "2.0", "50.0 EUR"],

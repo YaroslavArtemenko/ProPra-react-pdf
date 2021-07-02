@@ -18,7 +18,7 @@ const generateJahres = tickets => {
     const doc = new jsPDF();
 
     // define the columns we want and their titles
-    const tableColumn = ["Pos", "Schueler", "Anzahl h", "Honorar pro h", "Verguetung"];
+    const tableColumn = ["Pos", "Schüler", "Anzahl h", "Honorar pro h", "Vergütung"];
     // define an empty array of rows
     const tableRows = [
         ["1", "20216-SAGE", "2.0", "25.0 EUR", "50.0 EUR"],
@@ -40,7 +40,7 @@ const generateJahres = tickets => {
     doc.addImage(imgData, 'PNG', 165, 6, 30, 15)
 
     doc.setFontSize(14)
-    doc.text(`Fuer das Jahr: ${NewDate}`, 14, 40)
+    doc.text(`Für das Jahr: ${NewDate}`, 14, 40)
     doc.line(30, 50, 180, 50)
     doc.line(30, finalY+5, 180, finalY+5)
     doc.setFontSize(12)
