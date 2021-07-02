@@ -29,7 +29,7 @@ const generateJahres = tickets => {
 
     // startY is basically margin-top
     doc.autoTable({theme: "grid"})
-    doc.autoTable(tableColumn, tableRows, { startY: 60, theme: 'grid'});
+    doc.autoTable(tableColumn, tableRows, { startY: 55, theme: 'grid'});
     let finalY = doc.lastAutoTable.finalY;
     // const date = Date().split(" ");
     // ticket title. and margin-top + margin-left
@@ -41,10 +41,11 @@ const generateJahres = tickets => {
 
     doc.setFontSize(14)
     doc.text(`Fuer das Jahr: ${NewDate}`, 14, 40)
-
+    doc.line(30, 50, 180, 50)
+    doc.line(30, finalY+5, 180, finalY+5)
     doc.setFontSize(12)
     doc.setFont("Arial", "bold")
-    doc.text(`Gesamtbetrag:      ${gesamtBetrag}`, 130, finalY+10)
+    doc.text(`Gesamtbetrag:      ${gesamtBetrag}`, 130, finalY+15)
     // we define the name of our PDF file.
     doc.save(`${honorar}_Jahresbescheinigung.pdf`);
 };
