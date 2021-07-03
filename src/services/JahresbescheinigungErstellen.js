@@ -21,7 +21,7 @@ const generateJahres = tickets => {
     const tableColumn = ["Pos", "Schüler", "Anzahl h", "Honorar pro h", "Vergütung"];
     // define an empty array of rows
     const tableRows = [
-        ["1", "20216-SAGE", "2.0", "25.00€", "50.00€"],
+        ["1", "20216-SAGE", "2.0", "25.00 €", "50.00 €"],
 
     ];
 
@@ -45,7 +45,7 @@ const generateJahres = tickets => {
     doc.line(30, finalY+5, 180, finalY+5)
     doc.setFontSize(12)
     doc.setFont("Arial", "bold")
-    doc.text(`Gesamtbetrag:      ${gesamtBetrag}€`, 150, finalY+15)
+    doc.text(`Gesamtbetrag:      ${gesamtBetrag} €`, 150, finalY+15)
 
     //FOOTER
     doc.line(16,265, 185, 265)
