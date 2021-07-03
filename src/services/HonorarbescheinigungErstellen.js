@@ -52,9 +52,9 @@ const generateHonorar = tickets => {
     doc.setFontSize(10)
     doc.setFont("Arial", "normal")
     doc.text(`Institut für Lernförderung -\nKatharina Becker\nHillerbachweg 16\n57319 Bad Berleburg`, 15, 270)
-    doc.text(`Tel.: 0178 1403710\nE-Mail:\nkatharina.becker.94@outlook.de\nWebseite:\nhttps://www.braingain-\nlernfoerderung.com`, 55, 270)
-    doc.text(`Volksbank in Südwestfalen eG\nBIC:    GENODEM1NRD\nIBAN:   DE28 4476 1534 5703\n              5642 00\nKTO Inh.: braingain - Lernförderung`, 105, 270)
-    doc.text(`Steuernummer:\n342/ 5016/ 2169\nFinanzamt Siegen`, 160, 270)
+    doc.text(`Tel.: 0178 1403710\nE-Mail:\nkatharina.becker.94@outlook.de\nWebseite:\nhttps://www.braingain-\nlernfoerderung.com`, 60, 270)
+    doc.text(`Volksbank in Südwestfalen eG\nBIC:      GENODEM1NRD\nIBAN:   DE28 4476 1534 5703\n              5642 00\nKTO Inh.: braingain - Lernförderung`, 110, 270)
+    doc.text(`Steuernummer:\n342/ 5016/ 2169\nFinanzamt Siegen`, 165, 270)
 
     // we define the name of our PDF file.
     doc.save(`${honorar}_Honorarbescheinigung.pdf`);
