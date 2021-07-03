@@ -45,7 +45,7 @@ const generateHonorar = tickets => {
     doc.line(30, finalY+5, 180, finalY+5)
     doc.setFontSize(12)
     doc.setFont("Arial", "bold")
-    doc.text(`Gesamtbetrag:      ${gesamtBetrag}`, 130, finalY+15)
+    doc.text(`Gesamtbetrag:      ${gesamtBetrag}`, 150, finalY+15)
     // we define the name of our PDF file.
     doc.save(`${honorar}_Honorarbescheinigung.pdf`);
 };
